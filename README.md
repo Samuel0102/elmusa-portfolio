@@ -1,27 +1,46 @@
-# ElmusaPortfolio
+# Project Title
+:link: 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+## About the project
 
-## Development server
+### Final Visual
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Desktop
 
-## Code scaffolding
+#### Mobile
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Introduction
+* 
 
-## Build
+### Especifications
+*Author*: Samuel Pacheco Ferreira    
+*Description*: ""   
+*Stage*: ""       
+*Will be updated?*: ""          
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Technologies
+*Technologies*: ""         
+*IDE*: ""        
+*Main Structure*: ""     
 
-## Running unit tests
+### Functionalities
+| Functionality | Stage |
+| ----------- | ----------- |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+:clock130: - In Development   :heavy_check_mark: - Finished
 
-## Running end-to-end tests
+### Requirements to coding
+* 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### System Execution
+1. 
 
-## Further help
+### Documentation or other files
+:link: 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Project Origin
+* 
+
+### Main Challenges of the project
+* 
+* 
