@@ -13,6 +13,10 @@ import {MobileMenuService} from "../../services/mobile-menu.service";
 export class HeaderComponent {
   public mobileMenuIcon = faBars;
 
+  get isMenuMobileOpened(): boolean {
+    return this.mobileMenuService.showMenu();
+  }
+
   constructor(private readonly mobileMenuService: MobileMenuService) {
   }
 

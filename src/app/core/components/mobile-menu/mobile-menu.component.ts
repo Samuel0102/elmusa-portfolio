@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
-import {faX} from "@fortawesome/free-solid-svg-icons";
+import {faTimes} from "@fortawesome/free-solid-svg-icons";
 import {MobileMenuService} from "../../services/mobile-menu.service";
 
 @Component({
@@ -13,7 +13,7 @@ import {MobileMenuService} from "../../services/mobile-menu.service";
   styleUrl: './mobile-menu.component.scss'
 })
 export class MobileMenuComponent {
-  public closeMenuIcon = faX;
+  public closeMenuIcon = faTimes;
 
   get showMenu(): boolean {
     return this.mobileMenuService.showMenu();
