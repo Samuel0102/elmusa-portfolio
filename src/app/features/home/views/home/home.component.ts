@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AsyncPipe, NgOptimizedImage} from "@angular/common";
-import {TypewriterEffectService} from "../../../shared/services/typewriter-effect.service";
+import {TypewriterEffectService} from "../../../../shared/services/typewriter-effect.service";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {faGithub, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import {Observable, of} from "rxjs";
