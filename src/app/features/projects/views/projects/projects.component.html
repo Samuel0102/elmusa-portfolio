@@ -1,0 +1,40 @@
+<section class="text-neutral-300">
+  <div>
+    <h2 class="uppercase text-5xl tracking-wide">Projetos</h2>
+    <hr class="border-[.5px] w-12 mt-2">
+  </div>
+
+  <div class="flex mt-14 items-center justify-between">
+    <fa-icon [ngClass]="{'opacity-50': isFirstProject}"
+             size="xl"
+             [icon]="arrowIcons.left"
+             (click)="goToPreviousProject()"></fa-icon>
+
+    <div class="w-72">
+      <div class="w-64 h-36 border border-neutral-200 mx-auto">
+        <img class="w-full h-full -ml-4 mt-4 rounded"
+             [src]="'assets/images/projects/' + mainProject.thumbnail"
+             alt="Project thumbnail">
+      </div>
+
+      <div class="mt-6 flex justify-between">
+        <span class="uppercase">{{ mainProject.title }}</span>
+        <div class="flex space-x-4">
+          @if (mainProject.deployLink) {
+            <a [href]="mainProject.deployLink"><fa-icon [icon]="linkIcons.deploy"></fa-icon></a>
+          }
+          @if (mainProject.repoLink) {
+            <a [href]="mainProject.repoLink"><fa-icon [icon]="linkIcons.repository"></fa-icon></a>
+          }
+        </div>
+      </div>
+
+      <div class="mt-2 h-40">
+        <span class="opacity-30">{{ mainProject.stack }}</span>
+        <p class="mt-2 font-light opacity-60">{{ mainProject.description }}</p>
+      </div>
+    </div>
+
+    <fa-icon size="xl" [icon]="arrowIcons.right" (click)="goToNextProject()"></fa-icon>
+  </div>
+</section>
