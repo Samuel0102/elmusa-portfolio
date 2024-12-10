@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import {AsyncPipe, NgClass, NgOptimizedImage} from "@angular/common";
 import {Project} from "../../interfaces/project";
-import {projectList} from "../../../../../assets/data/project-list";
+import {projectList} from "@assets/data/project-list";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {faChevronLeft, faChevronRight, faEye} from "@fortawesome/free-solid-svg-icons";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {SectionHeadingComponent} from "@shared/components/section-heading/section-heading.component";
 
 @Component({
   selector: 'app-projects',
@@ -13,20 +14,20 @@ import {faGithub} from "@fortawesome/free-brands-svg-icons";
     AsyncPipe,
     FaIconComponent,
     NgOptimizedImage,
-    NgClass
+    NgClass,
+    SectionHeadingComponent
   ],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  templateUrl: './projects.component.html'
 })
 export class ProjectsComponent {
-  public projects: Project[] = projectList;
+  public readonly projects: Project[] = projectList;
 
-  public arrowIcons = {
+  public readonly arrowIcons = {
     right: faChevronRight,
     left: faChevronLeft
   }
 
-  public linkIcons = {
+  public readonly linkIcons = {
     deploy: faEye,
     repository: faGithub
   }

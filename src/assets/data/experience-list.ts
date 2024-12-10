@@ -1,4 +1,4 @@
-import {Experience} from "../../app/features/experience/interfaces/experience";
+import {Experience} from "@features/experience/interfaces/experience";
 
 export const experienceList: Experience[] = [
   {

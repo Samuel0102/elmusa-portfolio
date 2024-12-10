@@ -1,8 +1,5 @@
-<section class="text-neutral-300">
-  <div>
-    <h2 class="uppercase text-5xl tracking-wide">Projetos</h2>
-    <hr class="border-[.5px] w-12 mt-2">
-  </div>
+<section class="text-neutral-300" id="projects">
+  <app-section-heading title="Projetos"></app-section-heading>
 
   <div class="flex mt-14 items-center justify-between">
     <fa-icon [ngClass]="{'opacity-50': isFirstProject}"
@@ -11,10 +8,10 @@
              (click)="goToPreviousProject()"></fa-icon>
 
     <div class="w-72">
-      <div class="w-64 h-36 border border-neutral-200 mx-auto">
+      <div class="w-64 h-36 border border-neutral-200 mx-auto relative">
         <img class="w-full h-full -ml-4 mt-4 rounded"
-             [src]="'assets/images/projects/' + mainProject.thumbnail"
-             alt="Project thumbnail">
+             [ngSrc]="'assets/images/projects/' + mainProject.thumbnail"
+             alt="Project thumbnail" fill>
       </div>
 
       <div class="mt-6 flex justify-between">

@@ -1,4 +1,4 @@
-import {Education} from "../../app/features/education/interfaces/education";
+import {Education} from "@features/education/interfaces/education";
 
 export const educationList: Education[] = [
   {

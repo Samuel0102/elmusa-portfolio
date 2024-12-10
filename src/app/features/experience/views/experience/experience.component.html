@@ -1,16 +1,13 @@
-<section class="text-neutral-300">
-  <div>
-    <h2 class="uppercase text-5xl tracking-wide">Experiência Profissional</h2>
-    <hr class="border-[.5px] w-12 mt-2">
-  </div>
+<section class="text-neutral-300" id="experience">
+  <app-section-heading title="Experiência"></app-section-heading>
 
-  <ol class="border-s border-neutral-300 dark:border-neutral-500 mt-14">
+  <ol class="border-s border-neutral-300 mt-14">
     @for (experience of experiences; track experience.id) {
       <li>
         <div class="flex-start flex items-center pt-3">
           <div
-            class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"></div>
-          <p class="text-sm text-neutral-500 dark:text-neutral-300">
+            class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300"></div>
+          <p class="text-sm text-neutral-500">
             {{ experience.date }}
           </p>
         </div>

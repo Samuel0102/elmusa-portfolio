@@ -2,18 +2,15 @@
   <h1 class="text-2xl font-normal tracking-wider">ELMUSA</h1>
   <div>
     <ul class="hidden">
-      <li>Sobre</li>
-      <li>Experiência</li>
-      <li>Skills</li>
-      <li>Formação</li>
-      <li>Projetos</li>
+      @for (section of sections; track $index) {
+        <li><a [href]="section.key">{{ section.title }}</a></li>
+      }
     </ul>
 
-    @if (!isMenuMobileOpened) {
-      <button (click)="openMobileMenu()">
-        <fa-icon size="lg" [icon]="mobileMenuIcon"></fa-icon>
-      </button>
-    }
+    <button [ngClass]="{ 'hidden': isMenuMobileOpened }"
+            (click)="openMobileMenu()">
+      <fa-icon size="lg" [icon]="mobileMenuIcon"></fa-icon>
+    </button>
 
   </div>
 </header>

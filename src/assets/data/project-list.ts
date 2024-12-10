@@ -1,4 +1,4 @@
-import {Project} from "../../app/features/projects/interfaces/project";
+import {Project} from "@features/projects/interfaces/project";
 
 export const projectList: Project[] = [
   {

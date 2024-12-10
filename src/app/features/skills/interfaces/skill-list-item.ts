@@ -1,5 +1,5 @@
 export interface SkillListItem {
   id: number;
-  skill: string;
-  picture: string;
+  name: string;
+  icon: string;
 }

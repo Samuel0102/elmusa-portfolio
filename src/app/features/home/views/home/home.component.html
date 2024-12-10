@@ -1,4 +1,4 @@
-<section class="text-neutral-300">
+<section class="text-neutral-300" id="home">
   <div class="text-center">
     <h2 class="text-5xl opacity-85 tracking-wider uppercase">Samuel Pacheco</h2>
     <span class="text-2xl opacity-40">{{ typedTitle$ | async }}</span>
@@ -6,14 +6,13 @@
 
   <div class="grid grid-flow-col auto-cols-auto">
     <div class="flex flex-col space-y-6 text-2xl mt-4">
-      <fa-icon [icon]="socialMediaIcons.linkedin"></fa-icon>
-      <fa-icon [icon]="socialMediaIcons.github"></fa-icon>
-      <fa-icon [icon]="socialMediaIcons.instagram"></fa-icon>
+      <a [href]="socialMediaLinks.linkedin"><fa-icon [icon]="socialMediaIcons.linkedin"></fa-icon></a>
+      <a [href]="socialMediaLinks.github"><fa-icon [icon]="socialMediaIcons.github"></fa-icon></a>
     </div>
 
     <img
       class="mt-12"
-      ngSrc="../../../../../assets/images/home-profile-picture.png"
+      ngSrc="assets/images/home-profile-picture.png"
       alt="Developer profile picture"
       height="407"
       width="343">

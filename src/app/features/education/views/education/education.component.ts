@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
-import {educationList} from "../../../../../assets/data/education-list";
+import {educationList} from "@assets/data/education-list";
 import {Education} from "../../interfaces/education";
+import {SectionHeadingComponent} from "@shared/components/section-heading/section-heading.component";
 
 @Component({
   selector: 'app-education',
   standalone: true,
-  imports: [],
-  templateUrl: './education.component.html',
-  styleUrl: './education.component.scss'
+  imports: [
+    SectionHeadingComponent
+  ],
+  templateUrl: './education.component.html'
 })
 export class EducationComponent {
-  public educations : Education[] = educationList;
+  public readonly educations : Education[] = educationList;
 }

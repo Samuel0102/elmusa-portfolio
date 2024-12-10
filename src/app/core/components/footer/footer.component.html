@@ -1,9 +1,14 @@
 <footer class="bg-neutral-300 p-8 text-center">
   <div class="flex space-x-6 text-xl justify-center">
-    <fa-icon class="px-2 py-1 border border-black rounded-full" [icon]="socialMediaIcons.linkedin"></fa-icon>
-    <fa-icon class="px-2 py-1 border border-black rounded-full" [icon]="socialMediaIcons.github"></fa-icon>
-    <fa-icon class="px-2 py-1 border border-black rounded-full" [icon]="socialMediaIcons.instagram"></fa-icon>
-    <fa-icon class="px-2 py-1 border border-black rounded-full" [icon]="socialMediaIcons.email"></fa-icon>
+    <a [href]="socialMediaLinks.linkedin">
+      <fa-icon class="px-2 py-1 border border-black rounded-full" [icon]="socialMediaIcons.linkedin"></fa-icon>
+    </a>
+    <a [href]="socialMediaLinks.github">
+      <fa-icon class="px-2 py-1 border border-black rounded-full" [icon]="socialMediaIcons.github"></fa-icon>
+    </a>
+    <a [href]="socialMediaLinks.email">
+      <fa-icon class="px-2 py-1 border border-black rounded-full" [icon]="socialMediaIcons.email"></fa-icon>
+    </a>
   </div>
   <span class="block mt-4">&#169;2024 Samuel Pacheco | Todos os direitos reservados</span>
 
