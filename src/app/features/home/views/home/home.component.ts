@@ -26,7 +26,8 @@ export class HomeComponent implements OnInit {
   public readonly subtitles = [
     'Web Developer',
     'Fullstack Developer',
-    'Python Developer'
+    'Python Developer',
+    'Software Engineer'
   ];
 
   public readonly arrowDownIcon = faArrowDown;
