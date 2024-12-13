@@ -1,22 +1,22 @@
 <section class="text-neutral-300" id="projects">
-  <app-section-heading title="Projetos"></app-section-heading>
+  <app-section-heading title="Seleção de Projetos"></app-section-heading>
 
   <div class="flex mt-14 items-center justify-between">
     <fa-icon [ngClass]="{'opacity-50': isFirstProject}"
-             size="xl"
+             class="text-2xl md:text-4xl"
              [icon]="arrowIcons.left"
              (click)="goToPreviousProject()"></fa-icon>
 
-    <div class="w-72">
-      <div class="w-64 h-36 border border-neutral-200 mx-auto relative">
-        <img class="w-full h-full -ml-4 mt-4 rounded"
+    <div class="px-2 md:px-12">
+      <div class="w-full h-44 border border-neutral-200 mx-auto relative md:h-72 md:border-none">
+        <img class="w-full h-full -ml-4 mt-4 rounded md:m-0"
              [ngSrc]="'assets/images/projects/' + mainProject.thumbnail"
              alt="Project thumbnail" fill>
       </div>
 
-      <div class="mt-6 flex justify-between">
-        <span class="uppercase">{{ mainProject.title }}</span>
-        <div class="flex space-x-4">
+      <div class="mt-6 flex justify-between items-baseline">
+        <span class="uppercase md:text-2xl">{{ mainProject.title }}</span>
+        <div class="flex space-x-4 md:text-2xl">
           @if (mainProject.deployLink) {
             <a [href]="mainProject.deployLink"><fa-icon [icon]="linkIcons.deploy"></fa-icon></a>
           }
@@ -27,11 +27,13 @@
       </div>
 
       <div class="mt-2 h-40">
-        <span class="opacity-30">{{ mainProject.stack }}</span>
-        <p class="mt-2 font-light opacity-60">{{ mainProject.description }}</p>
+        <span class="opacity-30 md:text-xl">{{ mainProject.stack }}</span>
+        <p class="mt-2 font-light opacity-60 md:text-2xl">{{ mainProject.description }}</p>
       </div>
     </div>
 
-    <fa-icon size="xl" [icon]="arrowIcons.right" (click)="goToNextProject()"></fa-icon>
+    <fa-icon class="text-2xl md:text-4xl"
+             [icon]="arrowIcons.right"
+             (click)="goToNextProject()"></fa-icon>
   </div>
 </section>

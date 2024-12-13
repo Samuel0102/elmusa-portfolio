@@ -47,7 +47,7 @@ export class ProjectsComponent {
       this.currentProjectIndex += 1;
     }
 
-    if (this.currentProjectIndex === this.projects.length - 1) {
+    if (this.currentProjectIndex === this.projects.length) {
       this.currentProjectIndex = 0;
     }
   }

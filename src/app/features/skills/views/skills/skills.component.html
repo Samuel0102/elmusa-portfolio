@@ -3,14 +3,14 @@
 
   <div class="mt-14 flex flex-col space-y-12">
     @for (skillGroup of skills; track $index) {
-      <div>
-        <span class="text-2xl opacity-40 text-center tracking-wider">{{ skillGroup.group }}</span>
+      <div class="md:text-center">
+        <span class="text-2xl opacity-40 tracking-wider md:tracking-widest md:text-3xl">{{ skillGroup.group }}</span>
         <div class="flex flex-wrap gap-16 items-center justify-center mt-6">
           @for (skill of skillGroup.list; track $index) {
-            <div class="w-24 h-24 border border-neutral-200">
-              <div class="size-full bg-neutral-300 rounded flex flex-col items-center justify-center -ml-4 mt-4">
+            <div class="w-24 h-24 border border-neutral-200 md:w-40 md:h-20">
+              <div class="size-full bg-neutral-300 rounded flex flex-col items-center justify-center -ml-4 mt-4 md:flex-row md:space-x-2">
                 <i [ngClass]="[skill.icon, 'text-5xl text-black opacity-80 block']"></i>
-                <span class="text-black opacity-60 uppercase block">{{ skill.name }}</span>
+                <span class="text-black opacity-60 uppercase block md:text-xl">{{ skill.name }}</span>
               </div>
             </div>
           }

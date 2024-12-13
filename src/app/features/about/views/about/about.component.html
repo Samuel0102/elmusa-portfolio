@@ -1,24 +1,31 @@
 <section class="text-neutral-300" id="about">
-  <app-section-heading title="Quem é elmusa?"></app-section-heading>
+  <div class="md:hidden">
+    <app-section-heading class="md:hidden" title="Quem é elmusa?"></app-section-heading>
+    <img ngSrc="assets/images/about-profile-mobile.png"
+         height="431"
+         width="348"
+         alt="Developer profile picture">
+  </div>
 
-  <img ngSrc="assets/images/about-profile-mobile.png"
-       height="431"
-       width="348"
-       alt="Developer profile picture">
+  <img class="hidden w-full mx-auto md:block"
+       ngSrc="assets/images/about-profile-tablet.png"
+       height="474"
+       width="731"
+       alt="Developer profile picture (Quem é Elmusa?)">
 
-  <div class="font-light opacity-55 text-justify text-lg">
+  <div class="font-light opacity-55 text-justify text-lg md:text-2xl md:tracking-wide">
     <p>
       No universo da programação desde 2019, sou grande fã de música e filmes de terror e
       estou sempre buscando um aprendizado contínuo, já que adoro descobrir coisas novas!
       Prezo pelo uso da lógica e gosto muito de resolver problemas, encontrando os
       melhores caminhos.
     </p>
-    <p class="mt-4">
+    <p class="mt-8">
       Em meus projetos e no meu dia a dia procuro utilizar sempre das melhores técnicas e ferramentas
       para construir softwares com qualidade, sempre visando entregar "além de código". Para mim, desenvolver
       é todo um processo e por isso sou tão fã da área de Engenharia de Software.
     </p>
   </div>
 
-  <button class="uppercase mt-4 bg-neutral-300 text-black font-light p-1 rounded">Baixar Currículo</button>
+  <button class="uppercase mt-4 bg-neutral-300 text-black font-light p-1 rounded md:text-xl md:p-2 md:mt-8">Baixar Currículo</button>
 </section>

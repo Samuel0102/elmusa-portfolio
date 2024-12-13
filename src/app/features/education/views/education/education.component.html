@@ -4,17 +4,17 @@
   <div class="overflow-x-scroll">
     <ol class="flex gap-6 border-s-0 border-t mt-14">
       @for (education of educations; track education.id) {
-        <li class="min-w-72">
+        <li class="min-w-72 md:min-w-[40rem]">
           <div class="block pt-0">
             <div
               class="h-[9px] w-[9px] rounded-full bg-neutral-300 -mt-[5px] me-0 ms-0"></div>
-            <p class="mt-2 text-sm text-neutral-500">
+            <p class="mt-2 text-sm text-neutral-500 md:text-xl">
               {{ education.period }}
             </p>
           </div>
           <div class="mt-2 pb-5 ms-0">
-            <h4 class="mb-1.5 text-xl font-normal">{{ education.title }}, {{ education.origin }}</h4>
-            <p class="mb-3 text-neutral-300 opacity-55 font-extralight">
+            <h4 class="mb-1.5 text-xl font-normal md:text-2xl">{{ education.title }}, {{ education.origin }}</h4>
+            <p class="mb-3 text-neutral-300 opacity-55 font-extralight md:text-2xl">
               {{ education.description }}
             </p>
           </div>

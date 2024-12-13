@@ -7,14 +7,14 @@
         <div class="flex-start flex items-center pt-3">
           <div
             class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300"></div>
-          <p class="text-sm text-neutral-500">
+          <p class="text-sm text-neutral-500 md:text-xl">
             {{ experience.date }}
           </p>
         </div>
         <div class="mb-6 ms-4 mt-2">
-          <h4 class="mb-1.5 text-xl font-normal">{{ experience.jobPosition }}, {{ experience.company }}</h4>
+          <h4 class="mb-1.5 text-xl font-normal md:text-2xl">{{ experience.jobPosition }}, {{ experience.company }}</h4>
           <div [innerHTML]="experience.description"
-               class="text-neutral-300 opacity-55 font-extralight flex flex-col space-y-4"></div>
+               class="text-neutral-300 opacity-55 font-extralight flex flex-col space-y-4 md:text-2xl"></div>
         </div>
       </li>
     }

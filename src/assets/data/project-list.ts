@@ -15,7 +15,7 @@ export const projectList: Project[] = [
     stack: 'Javascript | Tailwind',
     deployLink: 'https://countriesrestapp.netlify.app/',
     repoLink: 'https://github.com/Samuel0102/rest-countries-tailwind',
-    description: 'Projeto implementado com base em design proposto como desafio pela plataforma Front-End Mentor. Consiste em uma aplicação que consome a API Rest Countries possibilitando listagem de países, filtragem e visualização detalhada de um país. ',
+    description: 'Projeto criado para consumo da API Rest Countries, possibilitando filtragem, detalhes, pesquisa e troca de temas',
     thumbnail: 'rest.png'
   },
   {
@@ -24,7 +24,7 @@ export const projectList: Project[] = [
     stack: 'Javascript | Sass',
     deployLink: 'https://roomhomepageapp.netlify.app/',
     repoLink: 'https://github.com/Samuel0102/room-homepage-front-end-mentor',
-    description: 'Desafio de Front End, implementado com o uso de JS e SASS tem como função ser um landing page de uma ficticia loja de móveis. Desenvolvido com o propósito de agregar nas habilidades em Javascript e para conhecimento mais avançado de pré-processors, além de primeira implementação de um Slider. ',
+    description: 'Projeto do FrontEnd Mentor, com principal objetivo e desafio na utilização de Sass como pré-processador para estruturar responsividade ',
     thumbnail: 'room.png'
   },
   {
@@ -40,7 +40,7 @@ export const projectList: Project[] = [
     stack: 'Javascript | Tailwind',
     deployLink: 'https://landing-page-easy-bank.netlify.app/',
     repoLink: 'https://github.com/Samuel0102/easy-bank-front-end-mentor',
-    description: 'Projeto Front-End implementado com base em desafio proposto pela plataforma Front-End Mentor, consistindo em uma landing page de uma fictícia empresa de banco. Primeiro uso de Tailwind. ',
+    description: 'Projeto proposto pela FrontEnd Mentor. Construção de layout responsivo inteiramente em TailwindCSS ',
     thumbnail: 'easy.png'
   }
 ]

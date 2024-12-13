@@ -1,24 +1,24 @@
 <section class="text-neutral-300" id="home">
   <div class="text-center">
-    <h2 class="text-5xl opacity-85 tracking-wider uppercase">Samuel Pacheco</h2>
-    <span class="text-2xl opacity-40">{{ typedTitle$ | async }}</span>
+    <h2 class="text-5xl opacity-85 tracking-wider uppercase md:text-7xl">Samuel Pacheco</h2>
+    <span class="text-2xl opacity-40 md:text-4xl">{{ typedTitle$ | async }}</span>
   </div>
 
   <div class="grid grid-flow-col auto-cols-auto">
-    <div class="flex flex-col space-y-6 text-2xl mt-4">
+    <div class="flex flex-col space-y-6 text-2xl mt-4 md:text-[2.7rem] md:self-end md:space-y-10">
       <a [href]="socialMediaLinks.linkedin"><fa-icon [icon]="socialMediaIcons.linkedin"></fa-icon></a>
       <a [href]="socialMediaLinks.github"><fa-icon [icon]="socialMediaIcons.github"></fa-icon></a>
     </div>
 
     <img
       class="mt-12"
-      ngSrc="assets/images/home-profile-picture.png"
+      ngSrc="assets/images/home-profile-picture-tablet.png"
       alt="Developer profile picture"
-      height="407"
-      width="343">
+      height="568"
+      width="558">
   </div>
 
-  <div class="text-right">
+  <div class="text-right md:hidden">
     <fa-icon size="2xl" [icon]="arrowDownIcon"></fa-icon>
   </div>
 </section>

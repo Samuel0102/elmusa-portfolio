@@ -1,13 +1,14 @@
 <header class="flex justify-between items-center text-neutral-300">
-  <h1 class="text-2xl font-normal tracking-wider">ELMUSA</h1>
+  <h1 class="text-2xl font-normal tracking-wider md:text-3xl">ELMUSA</h1>
   <div>
-    <ul class="hidden">
+    <ul class="hidden uppercase opacity-90 text-xl md:flex md:gap-x-5">
       @for (section of sections; track $index) {
         <li><a [href]="section.key">{{ section.title }}</a></li>
       }
     </ul>
 
     <button [ngClass]="{ 'hidden': isMenuMobileOpened }"
+            class="md:hidden"
             (click)="openMobileMenu()">
       <fa-icon size="lg" [icon]="mobileMenuIcon"></fa-icon>
     </button>
