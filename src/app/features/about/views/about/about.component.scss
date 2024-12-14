@@ -1,0 +1,8 @@
+
+@media screen and (min-width: 1024px) {
+  app-section-heading {
+    ::ng-deep hr {
+      margin-left: 0;
+    }
+  }
+}

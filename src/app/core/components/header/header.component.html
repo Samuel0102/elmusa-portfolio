@@ -1,9 +1,9 @@
 <header class="flex justify-between items-center text-neutral-300">
-  <h1 class="text-2xl font-normal tracking-wider md:text-3xl">ELMUSA</h1>
+  <h1 class="text-2xl font-normal tracking-wider md:text-3xl lg:text-4xl">ELMUSA</h1>
   <div>
-    <ul class="hidden uppercase opacity-90 text-xl md:flex md:gap-x-5">
+    <ul class="hidden md:flex md:gap-x-5">
       @for (section of sections; track $index) {
-        <li><a [href]="section.key">{{ section.title }}</a></li>
+        <li class="hover:underline uppercase opacity-90 text-xl lg:text-2xl"><a [href]="section.key">{{ section.title }}</a></li>
       }
     </ul>
 

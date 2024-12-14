@@ -9,8 +9,8 @@ import {SectionHeadingComponent} from "@shared/components/section-heading/sectio
     NgOptimizedImage,
     SectionHeadingComponent
   ],
-  templateUrl: './about.component.html'
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-
 }
