@@ -1,0 +1,19 @@
+<div class="w-full border-[0.01px] border-[#D2D0D0] flex h-96">
+  <img class="w-7/12 h-80 rounded self-end -mb-6 -ml-12"
+       [src]="'assets/images/projects/' + mainProject().thumbnail"
+       alt="Project picture">
+  <div class="w-5/12 flex flex-col gap-y-6 text-center ml-auto pr-9 self-center">
+    <span class="uppercase text-3xl">{{ mainProject().title }}</span>
+    <span class="opacity-30 text-xl">{{ mainProject().stack }}</span>
+    <p class="mt-2 font-light opacity-60 text-2xl text-justify">{{ mainProject().description }}</p>
+
+    <div class="flex space-x-4 text-2xl self-end pb-5">
+      @if (mainProject().deployLink) {
+      <a [href]="mainProject().deployLink"><fa-icon [icon]="linkIcons.deploy"></fa-icon></a>
+      }
+      @if (mainProject().repoLink) {
+      <a [href]="mainProject().repoLink"><fa-icon [icon]="linkIcons.repository"></fa-icon></a>
+      }
+    </div>
+  </div>
+</div>

@@ -6,6 +6,8 @@ import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {faChevronLeft, faChevronRight, faEye} from "@fortawesome/free-solid-svg-icons";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {SectionHeadingComponent} from "@shared/components/section-heading/section-heading.component";
+import {ProjectComponent} from "@features/projects/components/project/project.component";
+import {ProjectDesktopComponent} from "@features/projects/components/project-desktop/project-desktop.component";
 
 @Component({
   selector: 'app-projects',
@@ -15,7 +17,9 @@ import {SectionHeadingComponent} from "@shared/components/section-heading/sectio
     FaIconComponent,
     NgOptimizedImage,
     NgClass,
-    SectionHeadingComponent
+    SectionHeadingComponent,
+    ProjectComponent,
+    ProjectDesktopComponent
   ],
   templateUrl: './projects.component.html'
 })
@@ -25,11 +29,6 @@ export class ProjectsComponent {
   public readonly arrowIcons = {
     right: faChevronRight,
     left: faChevronLeft
-  }
-
-  public readonly linkIcons = {
-    deploy: faEye,
-    repository: faGithub
   }
 
   public currentProjectIndex = 0;
