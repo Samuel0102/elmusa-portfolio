@@ -1,11 +1,11 @@
-<section class="text-neutral-300 mt-20 lg:mt-10" id="home">
-  <div class="lg:flex lg:flex-row-reverse lg:justify-center lg:items-center lg:gap-16">
-    <div class="text-center lg:text-left">
+<section class="text-neutral-300 mt-20 lg:mt-10 2xl:w-10/12 2xl:mx-auto" id="home">
+  <div class="lg:flex lg:flex-row-reverse lg:justify-center lg:items-center lg:gap-x-16 2xl:gap-x-4">
+    <div class="text-center lg:text-left xl:w-6/12 xl:ml-8">
       <h2 class="text-5xl opacity-85 tracking-wider uppercase md:text-7xl">Samuel Pacheco</h2>
       <span class="text-2xl opacity-40 md:text-4xl">{{ typedTitle$ | async }}</span>
     </div>
 
-    <div class="grid grid-flow-col auto-cols-auto lg:space-x-16">
+    <div class="grid grid-flow-col auto-cols-auto lg:space-x-16 xl:w-6/12">
       <div class="flex flex-col space-y-6 text-2xl mt-4 md:text-[2.7rem] md:self-end md:space-y-10 lg:self-center">
         <a [href]="socialMediaLinks.linkedin"><fa-icon [icon]="socialMediaIcons.linkedin"></fa-icon></a>
         <a [href]="socialMediaLinks.github"><fa-icon [icon]="socialMediaIcons.github"></fa-icon></a>
