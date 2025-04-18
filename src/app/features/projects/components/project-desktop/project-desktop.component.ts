@@ -9,14 +9,13 @@ import {FaIconComponent} from "@fortawesome/angular-fontawesome";
   selector: 'app-project-desktop',
   standalone: true,
   imports: [
-    NgOptimizedImage,
     FaIconComponent
   ],
   templateUrl: './project-desktop.component.html',
   styleUrl: './project-desktop.component.scss'
 })
 export class ProjectDesktopComponent {
-  mainProject = input.required<Project>();
+  public mainProject = input.required<Project>();
 
   public readonly linkIcons = {
     deploy: faEye,

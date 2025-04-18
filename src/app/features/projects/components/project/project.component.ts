@@ -16,10 +16,11 @@ import {FaIconComponent} from "@fortawesome/angular-fontawesome";
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
+  public mainProject = input.required<Project>();
+
   public readonly linkIcons = {
     deploy: faEye,
     repository: faGithub
   }
 
-  mainProject = input.required<Project>();
 }

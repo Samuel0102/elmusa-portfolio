@@ -1,21 +1,19 @@
-import { Component } from '@angular/core';
-import {AsyncPipe, NgClass, NgOptimizedImage} from "@angular/common";
+import {Component, Signal} from '@angular/core';
+import {NgClass} from "@angular/common";
 import {Project} from "../../interfaces/project";
-import {projectList} from "@assets/data/project-list";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
-import {faChevronLeft, faChevronRight, faEye} from "@fortawesome/free-solid-svg-icons";
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {SectionHeadingComponent} from "@shared/components/section-heading/section-heading.component";
 import {ProjectComponent} from "@features/projects/components/project/project.component";
 import {ProjectDesktopComponent} from "@features/projects/components/project-desktop/project-desktop.component";
+import {TranslocoService} from "@jsverse/transloco";
+import {toSignal} from "@angular/core/rxjs-interop";
 
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [
-    AsyncPipe,
     FaIconComponent,
-    NgOptimizedImage,
     NgClass,
     SectionHeadingComponent,
     ProjectComponent,
@@ -24,7 +22,7 @@ import {ProjectDesktopComponent} from "@features/projects/components/project-des
   templateUrl: './projects.component.html'
 })
 export class ProjectsComponent {
-  public readonly projects: Project[] = projectList;
+  public projectList$: Signal<Project[]>;
 
   public readonly arrowIcons = {
     right: faChevronRight,
@@ -33,8 +31,12 @@ export class ProjectsComponent {
 
   public currentProjectIndex = 0;
 
+  constructor(private translocoService: TranslocoService) {
+    this.projectList$ = toSignal(this.translocoService.selectTranslateObject('projectsSection.list'), { initialValue: [] });
+  }
+
   get mainProject(): Project {
-    return this.projects[this.currentProjectIndex];
+    return this.projectList$()[this.currentProjectIndex];
   }
 
   get isFirstProject(): boolean {
@@ -42,11 +44,11 @@ export class ProjectsComponent {
   }
 
   public goToNextProject(): void {
-    if (this.currentProjectIndex < this.projects.length) {
+    if (this.currentProjectIndex < this.projectList$().length) {
       this.currentProjectIndex += 1;
     }
 
-    if (this.currentProjectIndex === this.projects.length) {
+    if (this.currentProjectIndex === this.projectList$().length) {
       this.currentProjectIndex = 0;
     }
   }

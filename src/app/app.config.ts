@@ -4,16 +4,22 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { TranslocoHttpLoader } from './transloco-loader';
-import { provideTransloco } from '@jsverse/transloco';
+import {provideTranslocoPersistLang} from "@jsverse/transloco-persist-lang";
+import {provideTransloco} from "@jsverse/transloco";
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideHttpClient(), provideTransloco({
-        config: {
-          availableLangs: ['en', 'pt'],
-          defaultLang: 'pt',
-          reRenderOnLangChange: true,
-          prodMode: !isDevMode(),
-        },
-        loader: TranslocoHttpLoader
-      })]
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideHttpClient(),
+    provideTransloco({
+      loader: TranslocoHttpLoader,
+      config: {
+        availableLangs: ['en', 'pt'],
+        defaultLang: 'pt',
+        reRenderOnLangChange: true,
+        prodMode: !isDevMode(),
+      },
+    }),
+    provideTranslocoPersistLang({
+      storage: { useValue: localStorage },
+    })
+  ]
 };

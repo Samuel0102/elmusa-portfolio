@@ -6,9 +6,10 @@
       </button>
 
       <ul class="text-center text-3xl leading-relaxed lowercase pt-20">
-        @for (section of sections; track $index) {
+        @for (section of sectionList$ | async; track $index) {
           <li><a [href]="section.key">{{ section.title }}</a></li>
         }
+        <app-language-selector></app-language-selector>
       </ul>
     </div>
   </div>

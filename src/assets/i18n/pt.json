@@ -1,12 +1,14 @@
 {
   "homeHeading": "ELMUSA",
   "header": {
-    "home": "Home",
-    "about": "Sobre",
-    "experience": "Experiência",
-    "projects": "Projetos",
-    "skills": "Skills",
-    "education": "Formação"
+    "list": [
+      { "id": 1, "key": "#home", "title": "Home" },
+      { "id": 2, "key": "#about", "title": "Sobre" },
+      { "id": 3, "key": "#projects", "title": "Projetos" },
+      { "id": 4, "key": "#experience", "title": "Experiência" },
+      { "id": 5, "key": "#skills", "title": "Skills" },
+      { "id": 6, "key": "#education", "title": "Formação" }
+    ]
   },
   "heroHeading": "Samuel Pacheco",
   "roles": {
@@ -21,13 +23,96 @@
     "downloadResumeLabel": "Baixar currículo"
   },
   "projectsSection": {
-    "title": "Principais projetos"
+    "title": "Principais projetos",
+    "list": [
+      {
+        "id": 1,
+        "title": "Portal de Talentos",
+        "stack": "Angular | Spring | Sass",
+        "deployLink": "https://www.portaldetalentos.senior.com.br/",
+        "description": "Projeto que atuei na Senior Sistemas. Grandes desafios na construção, principalmente pela arquitetura do back-end ser Hexagonal e ser feito em microsserviços.",
+        "thumbnail": "talent-portal.png"
+      },
+      {
+        "id": 2,
+        "title": "Rest Countries",
+        "stack": "Javascript | Tailwind",
+        "deployLink": "https://countriesrestapp.netlify.app/",
+        "repoLink": "https://github.com/Samuel0102/rest-countries-tailwind",
+        "description": "Projeto criado para consumo da API Rest Countries, possibilitando filtragem, detalhes, pesquisa e troca de temas",
+        "thumbnail": "rest.png"
+      },
+      {
+        "id": 3,
+        "title": "Room Homepage",
+        "stack": "Javascript | Sass",
+        "deployLink": "https://roomhomepageapp.netlify.app/",
+        "repoLink": "https://github.com/Samuel0102/room-homepage-front-end-mentor",
+        "description": "Projeto do FrontEnd Mentor, com principal objetivo e desafio na utilização de Sass como pré-processador para estruturar responsividade",
+        "thumbnail": "room.png"
+      },
+      {
+        "id": 4,
+        "title": "Gabarita Lab",
+        "stack": "Javascript | Boostrap",
+        "description": "Atuação no projeto para uma empresa de auxílio para vestibular. Ajustes essenciais no layout e na estrutura, adicionando novas áreas",
+        "thumbnail": "gabaritalab.png"
+      },
+      {
+        "id": 5,
+        "title": "Easy Bank",
+        "stack": "Javascript | Tailwind",
+        "deployLink": "https://landing-page-easy-bank.netlify.app/",
+        "repoLink": "https://github.com/Samuel0102/easy-bank-front-end-mentor",
+        "description": "Projeto proposto pela FrontEnd Mentor. Construção de layout responsivo inteiramente em TailwindCSS",
+        "thumbnail": "easy.png"
+      }
+    ]
   },
   "experienceSection": {
-    "title": "Experiência"
+    "title": "Experiência",
+    "list": [
+      {
+        "id": 1,
+        "date": "02.2024",
+        "jobPosition": "Desenvolvedor de Software",
+        "company": "Senior Sistemas",
+        "description": "<p>Desenvolvimento multidisciplinar, com atuação em três produtos da frente RH: Portal de Talentos, Recrutamento e Seleção e Onboarding. Como maior tempo de atuação o Portal de Talentos, um job board em Spring e Angular com foco em arquitetura limpa, acessibilidade e mobile-first.</p>"
+      },
+      {
+        "id": 2,
+        "date": "02.2022 - 09.2023",
+        "jobPosition": "Desenvolvedor Freelancer",
+        "company": "Plataformas variadas",
+        "description": "<p>Atuação multiplataforma, entregando projetos para Fiverr, 99Freelas, Upwork e Workana. Principais entregas relacionadas a automação, como um gerador de planilhas com base em cotações de criptomoedas e um gerador de vídeos para o Instagram. Entregas com diferentes tecnologias, com foco em Python.</p><div class=\"underline flex flex-col\"><a href=\"https://www.fiverr.com/samuelpachecofe\">Perfil Fiverr</a><a href=\"https://www.upwork.com/freelancers/~01d8b4280b6fa8913b\">Perfil Upwork</a><a href=\"https://www.99freelas.com.br/user/samuel-pacheco-ferreira\">Perfil 99Freelas</a></div>"
+      },
+      {
+        "id": 3,
+        "date": "05.2022 - 09.2023",
+        "jobPosition": "Estagiário de Engenharia de Software",
+        "company": "Philips",
+        "description": "<p>Atuação no sistema médico Tasy, entregando customizações e correções para o setor Financeiro e Contábil (F&A) em todas as plataformas ofertadas: Delphi, Java Swing e HTML5 (Angular/Spring)</p>"
+      }
+    ]
   },
   "educationSection": {
-    "title": "Formação"
+    "title": "Formação",
+    "list": [
+      {
+        "id": "1",
+        "title": "Engenharia de Software",
+        "origin": "Unicesumar",
+        "period": "02.2022 - 12.2025",
+        "description": "Formação a nível bacharel, abrangendo as temáticas e áreas de Programação, Estrutura de Dados, Sistemas e Arquiteturas, Gerenciamento e Construção de Software entre outras."
+      },
+      {
+        "id": "2",
+        "title": "Técnico em Informática",
+        "origin": "Instituto Federal Catarinense",
+        "period": "01.2019 - 02.2022",
+        "description": "Formação a nível técnico, com foco em ensino de Programação, Banco de Dados, Engenharia de Software e Redes."
+      }
+    ]
   },
   "skillsSection": {
     "title": "O que eu uso?"

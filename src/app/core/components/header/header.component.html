@@ -5,10 +5,8 @@
 
   <div>
     <ul class="hidden items-center md:flex md:gap-x-5">
-      @for (section of sections; track $index) {
-        <ng-container *transloco="let t; prefix: 'header'">
-          <li class="hover:underline uppercase opacity-90 text-xl lg:text-2xl"><a [href]="section.key">{{ t(section.titleCode) }}</a></li>
-        </ng-container>
+      @for (section of sectionList$ | async; track $index) {
+        <li class="hover:underline uppercase opacity-90 text-xl lg:text-2xl"><a [href]="section.key">{{ section.title }}</a></li>
       }
       <app-language-selector></app-language-selector>
     </ul>

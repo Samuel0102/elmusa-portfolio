@@ -1,8 +1,8 @@
-<section class="text-neutral-300">
+<section class="text-neutral-300" id="experience">
   <app-section-heading title="experienceSection.title"></app-section-heading>
 
   <ol class="border-s border-neutral-300 mt-14 lg:w-8/12 lg:mx-auto">
-    @for (experience of experiences; track experience.id) {
+    @for (experience of experienceList$ | async; track experience.id) {
       <li>
         <div class="flex-start flex items-center pt-3">
           <div
