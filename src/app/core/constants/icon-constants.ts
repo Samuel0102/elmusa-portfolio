@@ -1,4 +1,4 @@
-import {faGithub, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export const socialMediaIcons = {

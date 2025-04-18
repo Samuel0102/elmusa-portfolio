@@ -1,0 +1,36 @@
+{
+  "homeHeading": "ELMUSA",
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Work",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education"
+  },
+  "heroHeading": "Samuel Pacheco",
+  "roles": {
+    "fullstack": "Fullstack Developer",
+    "python": "Python Developer",
+    "engineer": "Software Engineer"
+  },
+  "aboutSection": {
+    "title": "Who is Samuel?",
+    "paragraphOne": "I've been part of the programming world since 2019, with a special passion for music and horror movies. I'm driven by continuous learning — I love discovering new things and solving challenges that require logic and creativity.",
+    "paragraphTwo": "In both my personal and professional projects, I strive to use the best practices and tools to build high-quality software, always aiming to deliver more than just code. To me, development is a full process, and that's exactly why I'm so passionate about Software Engineering.",
+    "downloadResumeLabel": "Download resume"
+  },
+  "projectsSection": {
+    "title": "Best projects"
+  },
+  "experienceSection": {
+    "title": "Experience"
+  },
+  "educationSection": {
+    "title": "Education"
+  },
+  "skillsSection": {
+    "title": "What I use?"
+  },
+  "copyright": "©2024 Samuel Pacheco | All rights reserved"
+}

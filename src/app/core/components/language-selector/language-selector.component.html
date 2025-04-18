@@ -1,0 +1,16 @@
+<div class="relative inline-block w-20">
+  <select
+    id="language"
+    [(ngModel)]="selectedLanguage"
+    (change)="onLanguageChange()"
+    class="appearance-none w-full bg-[#121212] border border-[#3d3d3d] text-gray-200 py-2 pl-3 pr-10 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-[#666] focus:border-[#666] transition"
+  >
+    <option *ngFor="let lang of languages" [value]="lang.code" class="bg-[#121212] text-gray-200">
+      {{ lang.flag }}
+    </option>
+  </select>
+
+  <div class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-400">
+    <fa-icon [icon]="chevronDown" class="text-sm"></fa-icon>
+  </div>
+</div>

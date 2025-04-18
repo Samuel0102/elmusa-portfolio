@@ -7,7 +7,7 @@
 
   <div class="lg:grid lg:grid-flow-col lg:gap-x-20">
     <app-section-heading class="md:hidden lg:block lg:mt-6 lg:justify-self-start"
-                         title="Quem é elmusa?"></app-section-heading>
+                         title="aboutSection.title"></app-section-heading>
 
     <img class="md:hidden lg:block lg:row-span-2 lg:justify-self-start lg:-order-1"
          ngSrc="assets/images/about-profile.png"
@@ -16,21 +16,18 @@
          alt="Developer profile picture">
 
     <div class="font-light text-justify text-lg md:text-2xl md:tracking-wide">
-      <p class="opacity-55">
-        No universo da programação desde 2019, sou grande fã de música e filmes de terror e
-        estou sempre buscando um aprendizado contínuo, já que adoro descobrir coisas novas!
-        Prezo pelo uso da lógica e gosto muito de resolver problemas, encontrando os
-        melhores caminhos.
-      </p>
-      <p class="mt-8 opacity-55">
-        Em meus projetos e no meu dia a dia procuro utilizar sempre das melhores técnicas e ferramentas
-        para construir softwares com qualidade, sempre visando entregar "além de código". Para mim, desenvolver
-        é todo um processo e por isso sou tão fã da área de Engenharia de Software.
-      </p>
+      <ng-container *transloco="let t; prefix: 'aboutSection'">
+        <p class="opacity-55">
+          {{ t('paragraphOne') }}
+        </p>
+        <p class="mt-8 opacity-55">
+          {{ t('paragraphTwo') }}
+        </p>
 
-      <a class="inline-block uppercase opacity-100 mt-8 bg-neutral-300 text-black font-light p-1 rounded md:text-xl md:p-2 md:mt-8"
-         href="assets/files/Fullstack%20-SamuelPacheco.pdf"
-         download="SamuelPacheco.pdf">Baixar Currículo</a>
+        <a class="inline-block uppercase opacity-100 mt-8 bg-neutral-300 text-black font-light p-1 rounded md:text-xl md:p-2 md:mt-8"
+           href="assets/files/Fullstack%20-SamuelPacheco.pdf"
+           download="SamuelPacheco.pdf">{{ t('downloadResumeLabel') }}</a>
+      </ng-container>
     </div>
   </div>
 </section>

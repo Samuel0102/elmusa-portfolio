@@ -4,11 +4,13 @@ import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {MobileMenuService} from "../../services/mobile-menu.service";
 import {KeyValuePipe, NgClass} from "@angular/common";
 import {sectionList} from "@assets/data/section-list";
+import {TranslocoDirective} from "@jsverse/transloco";
+import {LanguageSelectorComponent} from "@core/components/language-selector/language-selector.component";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-    imports: [FontAwesomeModule, NgClass, KeyValuePipe],
+  imports: [FontAwesomeModule, NgClass, TranslocoDirective, LanguageSelectorComponent],
   templateUrl: './header.component.html'
 })
 export class HeaderComponent {

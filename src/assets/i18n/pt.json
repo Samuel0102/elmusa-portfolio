@@ -1,0 +1,36 @@
+{
+  "homeHeading": "ELMUSA",
+  "header": {
+    "home": "Home",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "skills": "Skills",
+    "education": "Formação"
+  },
+  "heroHeading": "Samuel Pacheco",
+  "roles": {
+    "fullstack": "Fullstack Developer",
+    "python": "Python Developer",
+    "engineer": "Software Engineer"
+  },
+  "aboutSection": {
+    "title": "Quem é Elmusa?",
+    "paragraphOne": "Atuo no universo da programação desde 2019, com uma paixão especial por música e filmes de terror. Sou movido pelo aprendizado contínuo — adoro descobrir coisas novas e encarar desafios que exigem lógica e criatividade.",
+    "paragraphTwo": "Em meus projetos e na rotina de trabalho, busco sempre aplicar as melhores práticas e ferramentas para desenvolver soluções de qualidade, indo além do código e entregando valor real. Para mim, programar é mais do que escrever linhas — é participar de um processo completo, e é exatamente isso que me faz ser tão entusiasta da Engenharia de Software.",
+    "downloadResumeLabel": "Baixar currículo"
+  },
+  "projectsSection": {
+    "title": "Principais projetos"
+  },
+  "experienceSection": {
+    "title": "Experiência"
+  },
+  "educationSection": {
+    "title": "Formação"
+  },
+  "skillsSection": {
+    "title": "O que eu uso?"
+  },
+  "copyright": "©2024 Samuel Pacheco | Todos os direitos reservados"
+}

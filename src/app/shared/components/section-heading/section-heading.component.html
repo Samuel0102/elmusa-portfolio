@@ -1,2 +1,4 @@
-<h2 class="uppercase text-5xl tracking-wide md:text-center">{{ title() }}</h2>
+<ng-container *transloco="let t;">
+  <h2 class="uppercase text-5xl tracking-wide md:text-center">{{ t(title()) }}</h2>
+</ng-container>
 <hr class="border-[.5px] w-16 mt-4 md:mx-auto">
