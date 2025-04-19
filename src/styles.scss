@@ -11,3 +11,11 @@
 * {
   font-family: 'Oswald', sans-serif;
 }
+
+img,
+a,
+div,
+button,
+svg {
+  z-index: 5;
+}
