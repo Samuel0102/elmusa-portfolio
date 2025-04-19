@@ -1,23 +1,25 @@
 <section class="text-neutral-300" id="experience">
   <app-section-heading title="experienceSection.title"></app-section-heading>
 
-  <ol class="border-s border-neutral-300 mt-14 lg:w-8/12 lg:mx-auto">
-    @for (experience of experienceList$ | async; track experience.id) {
-      <li>
-        <div class="flex-start flex items-center pt-3">
-          <div
-            class="-ms-[5px] me-3 h-[9px] w-[9px] rounded-full bg-neutral-300"></div>
-          <p class="text-sm text-neutral-500 md:text-xl">
-            {{ experience.date }}
-          </p>
+  <div class="mt-14 w-full">
+    <p-timeline [value]="experienceList$()" [align]="getAlignByLayout()">
+      <ng-template pTemplate="marker">
+        <fa-icon [icon]="workIcon"></fa-icon>
+      </ng-template>
+      <ng-template pTemplate="content" let-experience>
+        <div class="lg:border lg:border-neutral-300 lg:rounded-md lg:p-6 ">
+          <div class="lg:pt-3">
+            <p class="text-sm text-neutral-500 md:text-xl">
+              {{ experience.date }}
+            </p>
+          </div>
+          <div class="mb-6 mt-2">
+            <h4 class="mb-1.5 text-xl font-normal md:text-2xl">{{ experience.jobPosition }}, {{ experience.company }}</h4>
+            <div [innerHTML]="experience.description"
+                 class="text-neutral-300 opacity-55 font-extralight flex flex-col space-y-4 md:text-2xl"></div>
+          </div>
         </div>
-        <div class="mb-6 ms-4 mt-2">
-          <h4 class="mb-1.5 text-xl font-normal md:text-2xl">{{ experience.jobPosition }}, {{ experience.company }}</h4>
-          <div [innerHTML]="experience.description"
-               class="text-neutral-300 opacity-55 font-extralight flex flex-col space-y-4 md:text-2xl"></div>
-        </div>
-      </li>
-    }
-  </ol>
-
+      </ng-template>
+    </p-timeline>
+  </div>
 </section>

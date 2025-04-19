@@ -75,14 +75,14 @@
       {
         "id": 1,
         "date": "02.2024",
-        "jobPosition": "Software Developer",
+        "jobPosition": "Fullstack Software Developer",
         "company": "Senior Sistemas",
         "description": "<p>Multidisciplinary development role, contributing to three HR-related products: Talent Portal, Recruitment and Selection, and Onboarding. Most of the time was dedicated to the Talent Portal, a job board built with Spring and Angular, focused on clean architecture, accessibility, and mobile-first design.</p>"
       },
       {
         "id": 2,
         "date": "02.2022 - 09.2023",
-        "jobPosition": "Freelance Developer",
+        "jobPosition": "Fullstack Freelance Developer",
         "company": "Various Platforms",
         "description": "<p>Cross-platform freelance work delivering projects through Fiverr, 99Freelas, Upwork, and Workana. Main deliveries involved automation, such as a spreadsheet generator based on cryptocurrency quotes and a video generator for Instagram. Delivered projects using different technologies, with a focus on Python.</p><div class=\"underline flex flex-col\"><a href=\"https://www.fiverr.com/samuelpachecofe\">Fiverr Profile</a><a href=\"https://www.upwork.com/freelancers/~01d8b4280b6fa8913b\">Upwork Profile</a><a href=\"https://www.99freelas.com.br/user/samuel-pacheco-ferreira\">99Freelas Profile</a></div>"
       },
