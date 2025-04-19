@@ -1,23 +1,21 @@
 import {Component, Signal} from '@angular/core';
-import {NgClass} from "@angular/common";
 import {Project} from "../../interfaces/project";
-import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {SectionHeadingComponent} from "@shared/components/section-heading/section-heading.component";
-import {ProjectComponent} from "@features/projects/components/project/project.component";
 import {ProjectDesktopComponent} from "@features/projects/components/project-desktop/project-desktop.component";
 import {TranslocoService} from "@jsverse/transloco";
 import {toSignal} from "@angular/core/rxjs-interop";
+import {CarouselModule} from "primeng/carousel";
+import {ProjectComponent} from "@features/projects/components/project/project.component";
 
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [
-    FaIconComponent,
-    NgClass,
     SectionHeadingComponent,
-    ProjectComponent,
-    ProjectDesktopComponent
+    ProjectDesktopComponent,
+    CarouselModule,
+    ProjectComponent
   ],
   templateUrl: './projects.component.html'
 })
@@ -29,35 +27,12 @@ export class ProjectsComponent {
     left: faChevronLeft
   }
 
-  public currentProjectIndex = 0;
-
   constructor(private translocoService: TranslocoService) {
     this.projectList$ = toSignal(this.translocoService.selectTranslateObject('projectsSection.list'), { initialValue: [] });
   }
 
-  get mainProject(): Project {
-    return this.projectList$()[this.currentProjectIndex];
+  get isNotLargeDevice(): boolean {
+    return window.innerWidth < 1280;
   }
 
-  get isFirstProject(): boolean {
-    return this.currentProjectIndex === 0;
-  }
-
-  public goToNextProject(): void {
-    if (this.currentProjectIndex < this.projectList$().length) {
-      this.currentProjectIndex += 1;
-    }
-
-    if (this.currentProjectIndex === this.projectList$().length) {
-      this.currentProjectIndex = 0;
-    }
-  }
-
-  public goToPreviousProject(): void {
-    if (this.isFirstProject) {
-      return;
-    }
-
-    this.currentProjectIndex -= 1;
-  }
 }

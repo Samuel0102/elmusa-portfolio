@@ -1,8 +1,8 @@
-<div class="w-full h-96 flex border border-neutral-300 mx-auto 2xl:w-9/12 2xl:justify-center 2xl:gap-x-8 2xl:items-center">
-  <img class="w-7/12 h-80 rounded self-end -mb-6 -ml-12 2xl:w-5/12 2xl:h-4/6 2xl:m-0 2xl:self-auto"
+<div class="w-full h-96 mx-auto flex items-start justify-center gap-x-8 2xl:items-center 2xl:w-9/12 2xl:border 2xl:border-neutral-300">
+  <img class="h-64 w-5/12 object-cover 2xl:w-5/12 2xl:h-4/6 2xl:m-0 2xl:self-auto"
        [src]="'assets/images/projects/' + mainProject().thumbnail"
        alt="Project picture">
-  <div class="w-5/12 h-72 flex flex-col gap-y-6 text-center self-center ml-auto pr-9 2xl:text-left 2xl:p-0 2xl:m-0 2xl:h-4/6">
+  <div class="w-5/12 flex flex-col gap-y-6 text-left 2xl:text-left 2xl:p-0 2xl:m-0 2xl:h-4/6">
     <span class="uppercase text-3xl">{{ mainProject().title }}</span>
     <span class="opacity-30 text-xl">{{ mainProject().stack }}</span>
     <p class="mt-2 font-light opacity-60 text-2xl text-justify">{{ mainProject().description }}</p>

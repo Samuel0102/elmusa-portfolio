@@ -1,21 +1,15 @@
 <section class="text-neutral-300 flex flex-col items-center" id="projects">
   <app-section-heading title="projectsSection.title"></app-section-heading>
 
-  <div class="w-full lg:w-11/12 mt-14">
-    <app-project-desktop class="hidden lg:block" [mainProject]="mainProject"></app-project-desktop>
-    <app-project class="lg:hidden" [mainProject]="mainProject"></app-project>
+  <div class="w-full mt-14">
+    <p-carousel [value]="projectList$()" [numVisible]="1" [numScroll]="1" [circular]="true">
+      <ng-template let-project pTemplate="item">
+        @if (isNotLargeDevice) {
+          <app-project [mainProject]="project"></app-project>
+        } @else {
+          <app-project-desktop [mainProject]="project"></app-project-desktop>
+        }
+      </ng-template>
+    </p-carousel>
   </div>
-
-  <div class="w-full flex justify-center gap-x-12 lg:mt-14">
-    <button (click)="goToPreviousProject()">
-      <fa-icon [ngClass]="{'opacity-50': isFirstProject}"
-               class="text-2xl md:text-4xl"
-               [icon]="arrowIcons.left"></fa-icon>
-    </button>
-    <button (click)="goToNextProject()">
-      <fa-icon class="text-2xl md:text-4xl cursor-pointer"
-               [icon]="arrowIcons.right"></fa-icon>
-    </button>
-  </div>
-
 </section>

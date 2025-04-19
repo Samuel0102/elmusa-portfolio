@@ -1,7 +1,7 @@
-<div class="px-2 md:px-12">
+<div class="px-4 md:px-12">
 
   <div class="w-full h-44 border border-neutral-200 mx-auto relative md:h-72 md:border-none">
-    <img class="w-full h-full -ml-4 mt-4 rounded md:m-0"
+    <img class="w-full h-full object-cover -ml-4 mt-4 rounded md:m-0"
          [ngSrc]="'assets/images/projects/' + mainProject().thumbnail"
          alt="Project thumbnail" fill>
   </div>
@@ -17,7 +17,6 @@
       }
     </div>
   </div>
-
 
   <div class="mt-2 h-32">
     <span class="opacity-30 md:text-xl">{{ mainProject().stack }}</span>
