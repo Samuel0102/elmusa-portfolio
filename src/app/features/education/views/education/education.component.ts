@@ -12,7 +12,8 @@ import {AsyncPipe} from "@angular/common";
     SectionHeadingComponent,
     AsyncPipe
   ],
-  templateUrl: './education.component.html'
+  templateUrl: './education.component.html',
+  styleUrl: './education.component.scss'
 })
 export class EducationComponent {
   public educationList$: Observable<Education[]>;

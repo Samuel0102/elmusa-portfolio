@@ -14,6 +14,13 @@ describe('ProjectComponent', () => {
 
     fixture = TestBed.createComponent(ProjectComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('mainProject', {
+      id: 1,
+      title: 'Test',
+      stack: 'Angular',
+      description: 'Desc',
+      thumbnail: 'test.png'
+    });
     fixture.detectChanges();
   });
 

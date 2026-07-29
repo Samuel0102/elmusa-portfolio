@@ -7,7 +7,13 @@
 
       <ul class="text-center text-3xl leading-relaxed lowercase pt-20">
         @for (section of sectionList$ | async; track $index) {
-          <li><a [href]="section.key">{{ section.title }}</a></li>
+          <li>
+            @if (navigationMode === 'router') {
+              <a [routerLink]="getRouterLink(section)">{{ section.title }}</a>
+            } @else {
+              <a [href]="section.key">{{ section.title }}</a>
+            }
+          </li>
         }
         <app-language-selector></app-language-selector>
       </ul>

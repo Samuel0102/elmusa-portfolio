@@ -6,7 +6,15 @@
   <div>
     <ul class="hidden items-center md:flex md:gap-x-5">
       @for (section of sectionList$ | async; track $index) {
-        <li class="hover:underline uppercase opacity-90 text-xl lg:text-2xl"><a [href]="section.key">{{ section.title }}</a></li>
+        <li class="uppercase opacity-90 text-xl lg:text-2xl">
+          @if (navigationMode === 'router') {
+            <a class="hover:underline" [routerLink]="getRouterLink(section)" routerLinkActive="underline" [routerLinkActiveOptions]="{ exact: true }">
+              {{ section.title }}
+            </a>
+          } @else {
+            <a class="hover:underline" [href]="section.key">{{ section.title }}</a>
+          }
+        </li>
       }
       <app-language-selector></app-language-selector>
     </ul>
