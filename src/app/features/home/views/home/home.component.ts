@@ -15,7 +15,8 @@ import {socialMediaLinks} from "@core/constants/link-constants";
     FaIconComponent,
     NgOptimizedImage
   ],
-  templateUrl: './home.component.html'
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
   public typedTitle$: Observable<string> = of();

@@ -1,0 +1,15 @@
+.skill-card {
+  transition: transform 180ms ease;
+}
+
+.skill-card-inner {
+  transition: transform 180ms ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card:hover .skill-card-inner {
+  transform: translate(0.35rem, -0.35rem);
+}

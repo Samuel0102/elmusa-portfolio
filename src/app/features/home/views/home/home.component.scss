@@ -1,0 +1,18 @@
+.home-image {
+  transform-origin: center bottom;
+  transition: transform 180ms ease;
+}
+
+.home-image:hover {
+  transform: translateY(-6px);
+}
+
+.home-social-link {
+  display: inline-flex;
+  width: fit-content;
+  transition: transform 180ms ease;
+}
+
+.home-social-link:hover {
+  transform: translateY(-3px);
+}

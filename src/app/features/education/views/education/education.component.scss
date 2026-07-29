@@ -1,0 +1,7 @@
+.education-card {
+  transition: transform 180ms ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+}

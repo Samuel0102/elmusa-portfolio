@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 
 import { MobileMenuComponent } from './mobile-menu.component';
 
@@ -8,7 +9,8 @@ describe('MobileMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MobileMenuComponent]
+      imports: [MobileMenuComponent],
+      providers: [provideRouter([])]
     })
     .compileComponents();
 

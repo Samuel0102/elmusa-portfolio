@@ -1,15 +1,9 @@
 <section class="text-neutral-300 flex flex-col" id="projects">
   <app-section-heading title="projectsSection.title"></app-section-heading>
 
-  <div class="w-full mt-14">
-    <p-carousel [value]="projectList$()" [numVisible]="1" [numScroll]="1" [circular]="true">
-      <ng-template let-project pTemplate="item">
-        @if (isNotLargeDevice) {
-          <app-project [mainProject]="project"></app-project>
-        } @else {
-          <app-project-desktop [mainProject]="project"></app-project-desktop>
-        }
-      </ng-template>
-    </p-carousel>
+  <div class="mt-14 flex flex-col gap-8 md:gap-12">
+    @for (project of projectList$(); track project.id; let i = $index) {
+      <app-project [mainProject]="project" [index]="i"></app-project>
+    }
   </div>
 </section>

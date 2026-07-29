@@ -18,15 +18,14 @@
   },
   "aboutSection": {
     "title": "Who is Samuel?",
-    "paragraphOne": "I've been part of the programming world since 2019, with a special passion for music and horror movies. I'm driven by continuous learning — I love discovering new things and solving challenges that require logic and creativity.",
-    "paragraphTwo": "In both my personal and professional projects, I strive to use the best practices and tools to build high-quality software, always aiming to deliver more than just code. To me, development is a full process, and that's exactly why I'm so passionate about Software Engineering.",
-    "downloadResumeLabel": "Download resume"
+    "paragraphOne": "I'm a fullstack developer with more than 4 years of experience, with a special passion for music and horror movies. I'm driven by continuous learning, and my hobby is discovering new things and taking on challenges that push me out of my comfort zone.",
+    "paragraphTwo": "In my projects and daily work, I always try to deliver quality, going beyond the code and creating real value. For me, programming is more than writing lines, it's a full process where code is the means to a solution."
   },
   "projectsSection": {
     "title": "Some projects",
     "list": [
       {
-        "id": 1,
+        "id": 3,
         "title": "Talent Portal",
         "stack": "Angular | Spring | Sass",
         "deployLink": "https://www.portaldetalentos.senior.com.br/",
@@ -34,7 +33,30 @@
         "thumbnail": "talent-portal.png"
       },
       {
+        "id": 8,
+        "title": "Remax",
+        "stack": "React | NodeJs | NextJs | NestJs",
+        "deployLink": "https://www.remax.com/bra/en",
+        "description": "Fullstack project I worked on at Valtech for a real estate system, focused on providing a better experience for buying, renting, or selling.",
+        "thumbnail": "remax.png"
+      },
+      {
+        "id": 1,
+        "title": "PSRH",
+        "stack": "Angular | Spring | NgZorro",
+        "repoLink": "https://github.com/Samuel0102/psrh",
+        "description": "Fullstack project in Java and Angular for managing applications and job openings for consultancies and candidate submissions",
+        "thumbnail": "psrh.webp"
+      },
+      {
         "id": 2,
+        "title": "Oficina Ferreira",
+        "stack": "Angular | Spring | NgZorro",
+        "description": "Fullstack project in Java and Angular for managing a workshop, with detailed management and dashboards",
+        "thumbnail": "oficina_ferreira.webp"
+      },
+      {
+        "id": 4,
         "title": "Rest Countries",
         "stack": "Javascript | Tailwind",
         "deployLink": "https://countriesrestapp.netlify.app/",
@@ -43,7 +65,7 @@
         "thumbnail": "rest.png"
       },
       {
-        "id": 3,
+        "id": 5,
         "title": "Room Homepage",
         "stack": "Javascript | Sass",
         "deployLink": "https://roomhomepageapp.netlify.app/",
@@ -52,14 +74,14 @@
         "thumbnail": "room.png"
       },
       {
-        "id": 4,
+        "id": 6,
         "title": "Gabarita Lab",
         "stack": "Javascript | Boostrap",
         "description": "Worked on a project for a company that supports students with college entrance exams. Contributed with essential layout and structural improvements and added new sections.",
         "thumbnail": "gabaritalab.png"
       },
       {
-        "id": 5,
+        "id": 7,
         "title": "Easy Bank",
         "stack": "Javascript | Tailwind",
         "deployLink": "https://landing-page-easy-bank.netlify.app/",
@@ -73,8 +95,15 @@
     "title": "Experience",
     "list": [
       {
+        "id": 4,
+        "date": "09.2025",
+        "jobPosition": "Mid-level Fullstack Engineer",
+        "company": "Valtech",
+        "description": "<p>Building scalable web applications with Node.js, NestJS, and Next.js, collaborating in Agile distributed teams to deliver enterprise SaaS solutions and support architecture, integrations, and CI/CD workflows.</p>"
+      },
+      {
         "id": 1,
-        "date": "02.2024",
+        "date": "02.2024 - 09.2025",
         "jobPosition": "Fullstack Software Developer",
         "company": "Senior Sistemas",
         "description": "<p>Multidisciplinary development role, contributing to three HR-related products: Talent Portal, Recruitment and Selection, and Onboarding. Most of the time was dedicated to the Talent Portal, a job board built with Spring and Angular, focused on clean architecture, accessibility, and mobile-first design.</p>"
@@ -117,5 +146,6 @@
   "skillsSection": {
     "title": "What I use?"
   },
-  "copyright": "©2024 Samuel Pacheco | All rights reserved"
+  "selectedProject": "Selected project",
+  "copyright": "©{{year}} Samuel Pacheco | All rights reserved"
 }

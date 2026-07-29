@@ -1,5 +1,5 @@
 <section class="text-neutral-300 2xl:w-10/12 2xl:mx-auto" id="about">
-  <img class="hidden w-full mx-auto md:block lg:hidden"
+  <img class="about-image hidden w-full mx-auto md:block lg:hidden"
        ngSrc="assets/images/about-profile-tablet.png"
        height="474"
        width="731"
@@ -9,25 +9,28 @@
     <app-section-heading class="md:hidden lg:block lg:mt-6 lg:justify-self-start"
                          title="aboutSection.title"></app-section-heading>
 
-    <img class="md:hidden lg:block lg:row-span-2 lg:justify-self-start lg:-order-1"
+    <img class="about-image md:hidden lg:block lg:row-span-2 lg:justify-self-start lg:-order-1"
          ngSrc="assets/images/about-profile.png"
          height="541"
          width="428"
          alt="Developer profile picture">
 
-    <div class="font-light text-justify text-lg md:text-2xl md:tracking-wide">
+    <div class="about-copy font-light text-justify text-lg md:text-2xl md:tracking-wide">
       <ng-container *transloco="let t; prefix: 'aboutSection'">
         <p class="opacity-55">
           {{ t('paragraphOne') }}
         </p>
+
         <p class="mt-8 opacity-55">
           {{ t('paragraphTwo') }}
         </p>
-
-        <a class="inline-block uppercase opacity-100 mt-8 bg-neutral-300 text-black font-light p-1 rounded md:text-xl md:p-2 md:mt-8"
-           [href]="resumeUrl()"
-           download="samuel-pacheco-cv.pdf">{{ t('downloadResumeLabel') }}</a>
       </ng-container>
+
+      <div class="about-tags mt-8 flex flex-wrap gap-3 text-xs uppercase tracking-[0.25em] text-white/55 md:text-sm">
+        <span class="about-tag">Fullstack</span>
+        <span class="about-tag">Product mindset</span>
+        <span class="about-tag">Clean code</span>
+      </div>
     </div>
   </div>
 </section>
